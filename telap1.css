@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.all {
+    background-color: #373738;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color: #ffffff
+}
+
+body {
+    font-family: "Inter";
+    font-weight: bold
+}
+
+.bg {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bpqs {
+    width: 20px;
+    height: 24px;
+
+
+}
+
+.containertopo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 1rem, rgb(0, 0, 0);
+}
+
+.containertopo .minilogo>img {
+    display: flex;
+    padding: 15px;
+    height: 100px;
+    position: relative;
+    left: -500px;
+}
+
+.containertopo .login>a {
+    color: rgb(255, 255, 255);
+    display: flex;
+    padding: 15px;
+    font-weight: bold;
+    width: 20px;
+    position: relative;
+    left: 500px;
+
+}
+
+.img {
+    display: flex;
+    gap: 20%;
+
+}
+
+
+.bp {
+    width: 500px;
+    height: 25px;
+    display: flex;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+#controleTopo {
+    display: flex;
+}
+
+
+
+.inputText {
+    width: 90%;
+    display: flex;
+}
+
+.topo {
+    display: flex;
+    color: aliceblue;
+    width: 105%;
+    gap: 120px;
+    margin: 15px;
+    list-style-type: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.alinhar {
+    flex-direction: column;
+}
+
+#a {
+    color: white;
+    display: flex;
+}
+
+#login {
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-weight: bold;
+    width: 20px;
+    float: right;
+
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    list-style-type: none;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50%;
+
+}
+
+#carousel3d {
+    background-color: #373738;
+
+
+}
+
+
+#carousel3d .carousel-3d-slide {
+    width: 200px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFC700;
+    padding: 10px;
+    transition: all 0.4s;
+}
+
+#carousel3d .carousel-3d-slide.current {
+    background-color: #000000;
+    color: #ffffff;
+    gap: 10px;
+
+}
+
+#carousel3d .carousel-3d-slide.current span {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+#videostp {
+    display: grid;
+    grid-template-columns: 20% 20% 20%; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;    
+    background-color: #373738;
+    justify-content: center;
+    align-items: center;
+}
+
+#videostp{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#video {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 18.9vh;
+}
+
+#videocont {
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    padding: 4px;
+    width: 35vh;
+    height: 25vh;
+    gap: 5px;
+}
+
+.titulo {
+    padding: 2px;
+
+}
+
+#tl {
+    color: #ffffff;
+}
+
+#colunavideos {
+    word-wrap: break-word;
+}
+
+#contReels {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    gap: 90px;
+    height: 470px;
+    padding-top: 25px;
+    overflow: hidden;
+    background-color: #242424;
+    justify-content: center;
+    align-items: center;
+}
+
+#contReels{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contReels::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#botaoVM{
+    width: 100%;
+}
+
+#reels {
+    display: flex;
+    border-radius: 20px;
+    height: 40vh;
+    width: 100%;
+}
+
+
+#tpReels {
+    display: flex;
+    flex-direction: column;
+}
+
+#tituloR {
+    margin-left: 6px;
+    color: #ffffff;
+}
+
+.footer {
+    display: flex;
+    background-color: #242424;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 83%;
+}
+
+.ajuda {
+    display: flex;
+    color: #ffffff;
+}
+
+.historico {
+    display: flex;
+    color: #ffffff;
+}
+
+.navbar {
+    width: 100%;
+    height: 13vh;
+    border-top: 1px;
+    background-color: #000000;
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.herderMid {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    align-items: center;
+    background-color: aqua;
+}
+
+.navbarSerch {
+    background-color: rgb(243, 243, 243);
+    width: 50%;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.botãoLogin {
+    background-color: aquamarine;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1343px) {
+    .links {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #videostp{
+
+    }
+
+
+
+}
+    

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OurScreen</title>
+    <link rel="stylesheet" href="telap1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+
+<body>
+    <div class="all">
+        <header class="navbar">
+            <div><img src="./imagens/mini logo.png" alt="" height="70px" width="70px"></div>
+            <div>
+                <div class="herderMid">
+                <div class="navbarSerch">
+                    <div class="inputText">
+                        <input type="text" class="bp" placeholder="Pesquisar">
+                    </div>
+                    <div>
+                        <img src="./imagens/lupa.png" alt="" class="bpqs">
+                    </div>
+                </div>
+           
+            </div>
+            <div class="links">
+                <p>Home</p>
+                <p>Reels</p>
+                <p>Relacionados</p>
+                <p>Seus Videos</p>
+            </div>
+        </div>
+            <div class="botãoLogin">
+                Login
+            </div>
+        </header>
+
+
+
+        <div id="carousel3d">
+            <carousel-3d :perspective="0" :space="200" :display="8" :controls-prev-html="'&#10092;'"
+                :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="70" :clickable="true"
+                :autoplay="true" :autoplay-timeout="5000">
+
+
+                <slide :index="0">
+                    <span class="title"><a
+                            href="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4">Tituloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></span>
+                    <iframe src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"
+                        autoplay="1"></iframe>
+                </slide>
+
+
+
+                <slide :index="1">
+                    <span class="title"><a
+                            href="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4">Tituloa</a></span>
+                    <iframe src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"
+                        autoplay="true"></iframe>
+                </slide>
+
+
+
+                <slide :index="2">
+                    <span class="title"><a
+                            href="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4">Titulo</a></span>
+                    <iframe src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"
+                        autoplay="true"></iframe>
+                </slide>
+
+
+
+                <slide :index="3">
+                    <span class="title"><a
+                            href="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4">Titulo</a></span>
+                    <iframe src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"
+                        autoplay="true"></iframe>
+                </slide>
+
+
+
+                <slide :index="4">
+                    <span class="title"><a
+                            href="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4">Titulo</a></span>
+                    <iframe src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"
+                        autoplay="true"></iframe>
+                </slide>
+
+
+
+                <slide :index="5">
+                    <span class="title"><a
+                            href="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4">Titulo</a></span>
+                    <iframe src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"
+                        autoplay="true"></iframe>
+                </slide>
+
+
+
+                <slide :index="6">
+                    <span class="title"><a
+                            href="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4">Titulo</a></span>
+                    <iframe src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"
+                        autoplay="true"></iframe>
+                </slide>
+
+
+            </carousel-3d>
+        </div>
+
+        <script>
+            const slide = document.getElementById('v1');
+
+            // Suponha que você tenha um código que muda a cor do slide
+            // Vamos usar um evento fictício 'corMudou' para representar essa mudança
+            slide.addEventListener('corMudou', function (event) {
+                // Verificar se a cor mudou para preto (ou qualquer outra cor específica que você desejar)
+                if (event.detail.cor === 'black') {
+                    // Criar uma âncora com o link desejado
+                    const anchor = document.createElement('a');
+                    anchor.href = '#';
+                    anchor.target = '_blank'; // Abrir em uma nova aba
+
+                    // Clicar na âncora programaticamente para redirecionar para a outra página
+                    anchor.click();
+                }
+            });
+        </script>
+
+        <div id="videostp">
+
+
+                <a href="#" id="videocont">
+                    <video id="video"
+                        src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4">
+                    </video>
+                    <p id="tl">Titulo</p>
+                </a>
+                <a href="#" id="videocont">
+                    <video id="video"
+                        src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                    <div id="tl">Titulo</div>
+                </a>
+                <a href="#" id="videocont">
+                    <video id="video"
+                        src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                    <div id="tl">Titulo</div>
+                </a>
+                <a href="#" id="videocont">
+                    <video id="video"
+                        src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                    <div id="tl">Titulo</div>
+                </a>
+
+                <a href="#" id="videocont">
+                    <video id="video" src="We Brought Water To Kenya.mp4"></video>
+                    <div id="tl">Tituloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+                </a>
+                <a href="#" id="videocont">
+                    <video id="video"
+                        src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                    <div id="tl">Titulo</div>
+                </a>
+                <a href="#" id="videocont">
+                    <video id="video"
+                        src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                    <div id="tl">Titulo</div>
+                </a>
+
+                <a href="#" id="videocont">
+                    <video id="video" src="We Brought Water To Kenya.mp4"></video>
+                    <div id="tl">Tituloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+                </a>
+
+                <a href="#" id="videocont">
+                    <video id="video"
+                        src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                    <div id="tl">Titulo</div>
+                </a>
+
+                <a href="#" id="videocont">
+                    <video id="video"
+                        src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                    <div id="tl">Tituloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+                </a>
+                <a href="#" id="videocont">
+                    <video id="video"
+                        src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                    <div id="tl">Titulo</div>
+                </a>
+
+                <a href="#" id="videocont">
+                    <video id="video" src="We Brought Water To Kenya.mp4"></video>
+                    <div id="tl">Tituloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+                </a>
+
+                <a href="#" id="videocont">
+                    <video id="video"
+                        src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                    <div id="tl">Titulo</div>
+                </a>
+
+                <a href="#" id="videocont">
+                    <video id="video" src="We Brought Water To Kenya.mp4"></video>
+                    <div id="tl">Tituloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+                </a>
+
+                <a href="#" id="videocont">
+                    <video id="video"
+                        src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                    <div id="tl">Titulo</div>
+                </a>
+        </div>
+
+        <div class="linhas"></div>
+
+
+        <div id="contReels">
+            <div id="tpReels">
+                <div id=""><video id="reels" src="MÃES EM 2050.mp4"></video></div>
+                <span id="tituloR">Titulo</span>
+            </div>
+
+            <div id="tpReels">
+                <div id=""><video id="reels" src="MÃES EM 2050.mp4"></video></div>
+                <span id="tituloR">Titulo</span>
+            </div>
+
+            <div id="tpReels">
+                <div id=""><video id="reels" src="MÃES EM 2050.mp4"></video></div>
+                <div id="tituloR">Titulo</div>
+            </div>
+
+            <div id="tpReels">
+                <div id=""><video id="reels" src="MÃES EM 2050.mp4"></video></div>
+                <div id="tituloR">Titulo</div>
+            </div>
+
+            <div id="tpReels">
+                <div id=""><video id="reels" src="MÃES EM 2050.mp4"></video></div>
+                <div id="tituloR">Titulo</div>
+            </div>
+
+            <div id="tpReels">
+                <div id=""><video id="reels" src="MÃES EM 2050.mp4"></video></div>
+                <div id="tituloR">Titulo</div>
+            </div>
+
+            <div id="tpReels">
+                <div id=""><video id="reels" src="MÃES EM 2050.mp4"></video></div>
+                <div id="tituloR">Titulo</div>
+            </div>
+                        <div id="tpReels">
+                <div id=""><video id="reels" src="MÃES EM 2050.mp4"></video></div>
+                <div id="tituloR">Titulo</div>
+            </div>
+
+            <div id="tpReels">
+                <div id=""><video id="reels" src="MÃES EM 2050.mp4"></video></div>
+                <div id="tituloR">Titulo</div>
+            </div>
+
+        </div>
+        <button id="botaoVM">Ver mais</button>
+        
+
+        <div id="videostp">
+
+
+            <a href="#" id="videocont">
+                <video id="video"
+                    src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4">
+                </video>
+                <p id="tl">Titulo</p>
+            </a>
+            <a href="#" id="videocont">
+                <video id="video"
+                    src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                <div id="tl">Titulo</div>
+            </a>
+            <a href="#" id="videocont">
+                <video id="video"
+                    src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                <div id="tl">Titulo</div>
+            </a>
+            <a href="#" id="videocont">
+                <video id="video"
+                    src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                <div id="tl">Titulo</div>
+            </a>
+
+            <a href="#" id="videocont">
+                <video id="video" src="We Brought Water To Kenya.mp4"></video>
+                <div id="tl">Tituloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+            </a>
+            <a href="#" id="videocont">
+                <video id="video"
+                    src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                <div id="tl">Titulo</div>
+            </a>
+            <a href="#" id="videocont">
+                <video id="video"
+                    src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                <div id="tl">Titulo</div>
+            </a>
+
+            <a href="#" id="videocont">
+                <video id="video" src="We Brought Water To Kenya.mp4"></video>
+                <div id="tl">Tituloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+            </a>
+
+            <a href="#" id="videocont">
+                <video id="video"
+                    src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                <div id="tl">Titulo</div>
+            </a>
+
+            <a href="#" id="videocont">
+                <video id="video"
+                    src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                <div id="tl">Tituloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+            </a>
+            <a href="#" id="videocont">
+                <video id="video"
+                    src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                <div id="tl">Titulo</div>
+            </a>
+
+            <a href="#" id="videocont">
+                <video id="video" src="We Brought Water To Kenya.mp4"></video>
+                <div id="tl">Tituloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+            </a>
+
+            <a href="#" id="videocont">
+                <video id="video"
+                    src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                <div id="tl">Titulo</div>
+            </a>
+
+            <a href="#" id="videocont">
+                <video id="video" src="We Brought Water To Kenya.mp4"></video>
+                <div id="tl">Tituloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+            </a>
+
+            <a href="#" id="videocont">
+                <video id="video"
+                    src="PF analisa fala de Eduardo Bolsonaro, que compara professores com traficantes.mp4"></video>
+                <div id="tl">Titulo</div>
+            </a>
+    </div>
+
+        
+
+        <footer>
+            <div class="footer">
+                <div class="ajuda">Ajuda</div>
+                <div class="historico">Hitorico</div>
+            </div>
+        </footer>
+
+
+
+
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js'></script>
+        <script src='https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js'></script>
+        <script src="telaP.js"></script>
+
+
+    </div>
+</body>
+
+
+</html>
